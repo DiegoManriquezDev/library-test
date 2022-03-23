@@ -2,40 +2,188 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: #f1e6d0;
+    background: #dee6ef;
+    font-family: 'poppins', 'sans-serif';
+}
+
+header{
+    width: 100%;
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 section{
     display: flex;
+    width: 100%;
     justify-content: space-around;
     padding: 15px;
+    color: #313131;
+    font-weight: 600;
 }
 
 .card-container{
     display: flex;
     flex-wrap: wrap;
+    max-width: 900px;
     width: 100%;
     height: 60vh;
     margin: 20px;
-    background: #f1e6d0;
+    background: #adb5bd;
+    border-radius: 5px;
+    overflow-y: scroll;
+    
+}
+
+.card-container::-webkit-scrollbar{
+    width: 0;
 }
 
 .card{
     display: flex;
+    flex-wrap: wrap;
     width:250px;
     height: 300px;
-    background: #ae9b8a;
+    background: #524a4a;
     margin: 10px;
     border-radius: 10px;
     justify-content: center;
+    box-shadow: 7px 7px 15px #942942;
+    visibility: hidden;
 }
 
-.card p {
-    margin-top: 5px;
+.card .book-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: none;
+    height: 50%;
     background: none;
 }
+
+.card .book-info p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+    background: none;
+    color: #dee6ef;
+    font-size: 20px;
+}
+
+.card .read-button{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.card .remove-button{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.card .read-button button .readed{
+    background: #942942;
+    box-shadow: 5px 5px 10px #524a4a;
+    transition: all 0.3s ease;
+}
+
+.card .read-button button:hover{
+    background: #313131;
+    opacity: 0.5;
+    color: white;
+}
+
+.card .remove-button button:hover{
+    background: #adb5bd;
+}
+
+
+.add-card-button{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+}
+
+.add-card-button button{
+    width: 250px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.add-card-button button:hover{
+    background: #942942;
+    box-shadow: 5px 5px 10px #524a4a;
+    transition: all 0.3s ease;
+}
+
+.form-book{
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+form .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+form .input input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 40px;
+    border-style: none;
+    border-radius: 5px;
+    background: #adb5bd;
+}
+
+form .input input:hover{
+    border: 1px solid #942942;
+    transition: all 0.3s ease;
+}
+
+form .checkbox{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form .submit button{
+    width: 100%;
+    height: 40px;
+    background: #942942;
+    box-shadow: 5px 5px 10px #313131;
+}
+
+form .submit button:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
