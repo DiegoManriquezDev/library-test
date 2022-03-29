@@ -38,7 +38,7 @@ section{
     background: #adb5bd;
     border-radius: 5px;
     overflow-y: scroll;
-    
+
 }
 
 .card-container::-webkit-scrollbar{
@@ -55,7 +55,7 @@ section{
     border-radius: 10px;
     justify-content: center;
     box-shadow: 7px 7px 15px #942942;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 .card .book-info{
