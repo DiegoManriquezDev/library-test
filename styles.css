@@ -58,6 +58,8 @@ section{
     /*visibility: hidden;*/
 }
 
+
+
 .card .book-info{
     display: flex;
     flex-direction: column;
@@ -142,7 +144,12 @@ button{
     justify-content: center;
     padding: 10px;
     border-radius: 15px;
-    
+    transition: all 0.3s ease;
+}
+
+.hide-form-book{
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
 form .title{
